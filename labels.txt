@@ -1,0 +1,2 @@
+kubectl label nodes node1 key1=value1
+kubectl label nodes node1 key1-

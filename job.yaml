@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: job
+spec:
+  conditions: 3
+  parallelism: 3
+  template:
+    metadata:
+      name: job-pod
+    spec:
+      containers:
+      - name: job-pod
+        image: nginx
+      restartPolicy: Never
